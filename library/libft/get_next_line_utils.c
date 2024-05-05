@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eakman <eakman@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: mportaka <mportaka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/08/24 16:46:51 by eakman            #+#    #+#             */
-/*   Updated: 2023/11/12 20:34:43 by eakman           ###   ########.fr       */
+/*   Created: 2024/02/24 14:13:19 by mportaka          #+#    #+#             */
+/*   Updated: 2024/02/24 14:13:20 by mportaka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.h                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melisportakal <melisportakal@student.42    +#+  +:+       +#+        */
+/*   By: mportaka <mportaka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 14:54:04 by eakman            #+#    #+#             */
-/*   Updated: 2024/02/23 14:08:28 by melisportak      ###   ########.fr       */
+/*   Created: 2024/02/24 14:07:36 by mportaka          #+#    #+#             */
+/*   Updated: 2024/02/24 14:15:49 by mportaka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -60,9 +60,7 @@ int				main_initiliazer(char *map_path, t_main **main);
 char			**map_initiliazer(char *path, t_main *main);
 
 void			check_parameters(int ac, char **av);
-void			map_wall_checker(t_main *main);
 void			map_checker(t_main *main);
-void			bonus_map_control(t_main *main, int i, int j);
 
 int				virtual_map(t_main *main, int y, int x);
 int				draw_map(t_main *main);
@@ -78,5 +76,4 @@ void			ft_error(char *errormsg, t_main *main);
 
 int				key_hook(int keycode, t_main *main);
 int				render(t_main *main);
-void			ber_check(char *map_path);
 #endif

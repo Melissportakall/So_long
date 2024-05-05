@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   draw.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melisportakal <melisportakal@student.42    +#+  +:+       +#+        */
+/*   By: mportaka <mportaka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 17:47:21 by eakman            #+#    #+#             */
-/*   Updated: 2024/02/21 21:59:48 by melisportak      ###   ########.fr       */
+/*   Created: 2024/02/24 14:14:19 by mportaka          #+#    #+#             */
+/*   Updated: 2024/02/24 14:35:33 by mportaka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,16 +24,16 @@ static int	convert(t_main *main)
 {
 	int	x;
 	int	y;
-	
+
 	main->sprite->wall = mlx_xpm_file_to_image(main->mlx, "./images/Wall.xpm",
 			&x, &y);
 	main->sprite->player = mlx_xpm_file_to_image(main->mlx,
-			"./images/Player.xpm", &x, &y);
+			"./images/Mario.xpm", &x, &y);
 	main->sprite->coin = mlx_xpm_file_to_image(main->mlx,
-			"./images/coin.xpm", &x, &y);
+			"./images/Mushroom.xpm", &x, &y);
 	main->sprite->tile = mlx_xpm_file_to_image(main->mlx,
-			"./images/floor.xpm", &x, &y);
-	main->sprite->exit = mlx_xpm_file_to_image(main->mlx, "./images/door.xpm",
+			"./images/Floor.xpm", &x, &y);
+	main->sprite->exit = mlx_xpm_file_to_image(main->mlx, "./images/Pipe.xpm",
 			&x, &y);
 	if (xpm_check(main))
 		return (1);

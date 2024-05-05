@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   so_long.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melisportakal <melisportakal@student.42    +#+  +:+       +#+        */
+/*   By: mportaka <mportaka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 14:52:57 by eakman            #+#    #+#             */
-/*   Updated: 2024/02/23 14:08:38 by melisportak      ###   ########.fr       */
+/*   Created: 2024/02/24 14:14:46 by mportaka          #+#    #+#             */
+/*   Updated: 2024/02/24 14:34:43 by mportaka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,16 +29,16 @@ static void	path_check(char *str)
 		close(fd);
 }
 
-int	main(int ac, char **av)
+int	main(int argc, char **argv)
 {
 	t_main	*main;
 
-	check_parameters(ac, av);
-	path_check(av[1]);
+	check_parameters(argc, argv);
+	path_check(argv[1]);
 	main = (t_main *)malloc(sizeof(t_main));
 	if (!main)
 		return (0);
-	if (main_initiliazer(av[1], &main))
+	if (main_initiliazer(argv[1], &main))
 		return (free(main), 0);
 	map_checker(main);
 	if (virtual_map(main, 0, 0))

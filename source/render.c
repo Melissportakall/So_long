@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   render.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melisportakal <melisportakal@student.42    +#+  +:+       +#+        */
+/*   By: mportaka <mportaka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 19:24:48 by eakman            #+#    #+#             */
-/*   Updated: 2024/02/24 12:25:23 by melisportak      ###   ########.fr       */
+/*   Created: 2024/02/24 14:14:42 by mportaka          #+#    #+#             */
+/*   Updated: 2024/02/24 14:36:04 by mportaka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,8 +34,6 @@ void	render_player2(t_main *main, int i)
 		}
 		else if (main->map->map[i][j] == 'C')
 		{
-			mlx_put_image_to_window(main->mlx, main->win, main->sprite->tile, j
-				* PIXEL, i * PIXEL);
 			mlx_put_image_to_window(main->mlx, main->win, main->sprite->coin, j
 				* PIXEL, i * PIXEL);
 		}

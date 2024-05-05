@@ -1,15 +1,3 @@
-# **************************************************************************** #
-#                                                                              #
-#                                                         :::      ::::::::    #
-#    Makefile                                           :+:      :+:    :+:    #
-#                                                     +:+ +:+         +:+      #
-#    By: eakman <eakman@student.42kocaeli.com.tr    +#+  +:+       +#+         #
-#                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2023/11/12 17:14:59 by eakman            #+#    #+#              #
-#    Updated: 2023/11/12 21:10:57 by eakman           ###   ########.fr        #
-#                                                                              #
-# **************************************************************************** #
-
 LIBFTPATH	= library/libft
 
 NAME		= so_long
@@ -63,5 +51,5 @@ fclean:		clean
 			@$(RM) -r $(NAME)
 			@$(RM) -rf libft.a
 re:			fclean all
-			@$(ECHO) -n "$(GREEN)Cleaned and rebuilt everything for [so_long]!"
+			@$(ECHO) "Cleaned and rebuilt everything for [so_long]!"
 .PHONY:		all clean fclean re norm

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   checks.c                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: eakman <eakman@student.42kocaeli.com.tr    +#+  +:+       +#+        */
+/*   By: mportaka <mportaka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 15:02:55 by eakman            #+#    #+#             */
-/*   Updated: 2023/11/12 17:32:11 by eakman           ###   ########.fr       */
+/*   Created: 2024/02/24 14:14:15 by mportaka          #+#    #+#             */
+/*   Updated: 2024/02/24 14:26:05 by mportaka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -55,6 +55,12 @@ void	map_cem_checker(t_main **main, int i, int j)
 		(*main)->c_count++;
 	if ((*main)->map->map[i][j] == 'E')
 		(*main)->e_count++;
+	if ((*main)->map->map[i][j] == 'P')
+	{
+		(*main)->p_count++;
+		(*main)->player_x = j;
+		(*main)->player_y = i;
+	}
 }
 
 void	map_checker(t_main *main)
@@ -68,12 +74,6 @@ void	map_checker(t_main *main)
 		j = 0;
 		while (j < (main->map->x))
 		{
-			if (main->map->map[i][j] == 'P')
-			{
-				main->p_count++;
-				main->player_x = j;
-				main->player_y = i;
-			}
 			map_cem_checker(&main, i, j);
 			j++;
 		}

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   path_finding.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: melisportakal <melisportakal@student.42    +#+  +:+       +#+        */
+/*   By: mportaka <mportaka@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2023/11/12 17:35:35 by eakman            #+#    #+#             */
-/*   Updated: 2024/02/23 13:47:41 by melisportak      ###   ########.fr       */
+/*   Created: 2024/02/24 14:14:37 by mportaka          #+#    #+#             */
+/*   Updated: 2024/02/24 14:14:38 by mportaka         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
